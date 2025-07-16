@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Test
+test/
+
+# Cursor
+.cursor/
+
+# MacOS
+.DS_Store
+
+# Log dosyaları
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test çıktıları
+test/*.log
+test/*.tmp
+
+# Çevresel değişkenler
+.env 
