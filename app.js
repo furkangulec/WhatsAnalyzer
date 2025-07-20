@@ -1,11 +1,15 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
+const cors = require('cors');
 const { createResponse } = require('./utils/response');
 const { analyzeWhatsappChat } = require('./services/whatsappAnalyzer');
 
 const app = express();
 const port = 3000;
+
+
+app.use(cors({ origin: 'http://localhost:3001' }));
 
 // Sadece .txt dosyalarını kabul eden multer storage ve filter
 const storage = multer.memoryStorage();
